@@ -56,4 +56,5 @@ for ($i = 0; $i -lt $users.Count; $i++) {
 # Display summary table
 $objReport | Format-Table -AutoSize
 
-$objReport | Export-Csv .\UserLookupReport.csv -NoTypeInformation
+$timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+$objReport | Export-Csv .\UserLookupReport_$timestamp.csv -NoTypeInformation
