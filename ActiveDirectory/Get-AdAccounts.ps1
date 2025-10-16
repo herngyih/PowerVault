@@ -56,5 +56,4 @@ for ($i = 0; $i -lt $users.Count; $i++) {
 # Display summary table
 $objReport | Format-Table -AutoSize
 
-# Optional: Export to CSV
-# $objReport | Export-Csv .\UserLookupReport.csv -NoTypeInformation
+$objReport | Export-Csv .\UserLookupReport.csv -NoTypeInformation
